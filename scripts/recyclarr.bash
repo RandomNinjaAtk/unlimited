@@ -14,6 +14,9 @@ getArrAppInfo () {
   fi
 }
 
+echo "test"
+exit
+
 getArrAppInfo
 # Configure Yaml with URL and API Key
 sed -i "s%arrUrl%$arrUrl%g" "/recyclarr/$arrName.yaml"

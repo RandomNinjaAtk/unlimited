@@ -1,1 +1,17 @@
+sonarr:
+  sonarr:
+    base_url: http://unlimited_sonarr:8989
+    api_key: api_key
+            
+    delete_old_custom_formats: true
+    replace_existing_custom_formats: true
 
+    # Media Naming Configuration
+    media_naming:
+      series: plex-tvdb
+      season: default
+      episodes:
+        rename: true
+        standard: default
+        daily: default
+        anime: default

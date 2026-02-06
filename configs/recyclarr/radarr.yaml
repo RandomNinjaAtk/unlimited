@@ -13,7 +13,7 @@
 radarr:
   # Set the URL/API Key to your actual instance
   instance_name:
-    base_url: http://enter_url:7878
+    base_url: enter_url
     api_key: enter_api_key  
        
     delete_old_custom_formats: true

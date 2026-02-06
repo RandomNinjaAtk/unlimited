@@ -12,7 +12,7 @@
 # Configuration specific to Radarr.
 radarr:
   # Set the URL/API Key to your actual instance
-  radarr:
+  instance_name:
     base_url: http://enter_url:7878
     api_key: enter_api_key  
        

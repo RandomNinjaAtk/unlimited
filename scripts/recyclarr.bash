@@ -10,7 +10,7 @@ getArrAppInfo () {
 	arrName="$(sed -n '/<InstanceName>/{s/.*<InstanceName>//;s/<\/InstanceName.*//;p;}' /radarr/config.xml)"
 	arrApiKey="$(sed -n '/<ApiKey>/{s/.*<ApiKey>//;s/<\/ApiKey.*//;p;}' /radarr/config.xml)"
 	arrPort="$(sed -n '/<Port>/{s/.*<Port>//;s/<\/Port.*//;p;}' /radarr/config.xml)"
-    arrUrl="http://127.0.0.1:${arrPort}${arrUrlBase}"
+    arrUrl="http://$arrName:${arrPort}${arrUrlBase}"
   fi
 }
 

@@ -1,23 +1,39 @@
 getArrAppInfo () {
   # Get Arr App information
   if [ -z "$arrUrl" ] || [ -z "$arrApiKey" ]; then
-    arrUrlBase="$(cat /config/config.xml | xq | jq -r .Config.UrlBase)"
+	arrUrlBase="$(sed -n '/<UrlBase>/{s/.*<UrlBase>//;s/<\/UrlBase.*//;p;}' /radarr/config.xml)"
     if [ "$arrUrlBase" == "null" ]; then
       arrUrlBase=""
     else
       arrUrlBase="/$(echo "$arrUrlBase" | sed "s/\///")"
     fi
-    arrName="$(cat /config/config.xml | xq | jq -r .Config.InstanceName)"
-    arrApiKey="$(cat /config/config.xml | xq | jq -r .Config.ApiKey)"
-    arrPort="$(cat /config/config.xml | xq | jq -r .Config.Port)"
+	arrName="$(sed -n '/<InstanceName>/{s/.*<InstanceName>//;s/<\/InstanceName.*//;p;}' /radarr/config.xml)"
+	arrApiKey="$(sed -n '/<ApiKey>/{s/.*<ApiKey>//;s/<\/ApiKey.*//;p;}' /radarr/config.xml)"
+	arrPort="$(sed -n '/<Port>/{s/.*<Port>//;s/<\/Port.*//;p;}' /radarr/config.xml)"
     arrUrl="http://127.0.0.1:${arrPort}${arrUrlBase}"
   fi
 }
 
-echo "test"
-exit
+Process () {
 
-getArrAppInfo
-# Configure Yaml with URL and API Key
-sed -i "s%arrUrl%$arrUrl%g" "/recyclarr/$arrName.yaml"
-sed -i "s%arrApi%$arrApiKey%g" "/recyclarr/$arrName.yaml"
+	folder="$1"
+	getArrAppInfo
+
+	echo "Configuring recyclarr for $arrName"
+	recyclarrConfigFile="/recyclarr/configs/${arrName}.yaml"
+	if [ -f "$recyclarrConfigFile" ]; then
+		rm "$recyclarrConfigFile"
+	fi
+	cp /git-sync/configs/recyclarr/radarr.yaml "$recyclarrConfigFile"
+	if [ -f "$recyclarrConfigFile" ]; then
+		sed -i "s%instance_name%$arrName%g" "$recyclarrConfigFile"
+		sed -i "s%enter_url%$arrUrl%g" "$recyclarrConfigFile"
+		sed -i "s%enter_api_key%$arrApiKey%g" "$recyclarrConfigFile"
+	fi
+}
+
+Process "/radarr"
+
+
+
+exit

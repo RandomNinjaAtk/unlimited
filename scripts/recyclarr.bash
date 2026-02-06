@@ -12,7 +12,7 @@ Process () {
 	fi
 	cp /git-sync/configs/recyclarr/$folder.yaml "$recyclarrConfigFile"
 	if [ -f "$recyclarrConfigFile" ]; then
-		sed -i "s%api_key%$arrApiKey%g" "$recyclarrConfigFile"
+		sed -i "s%arr_api_key%$arrApiKey%g" "$recyclarrConfigFile"
 	fi
 }
 

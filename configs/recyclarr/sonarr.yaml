@@ -1,5 +1,5 @@
 sonarr:
-  sonarr:
+  unlimited_sonarr:
     base_url: http://unlimited_sonarr:8989
     api_key: arr_api_key
             

@@ -14,7 +14,7 @@ radarr:
   # Set the URL/API Key to your actual instance
   unlimited_radarr:
     base_url: http://unlimited_radarr:7878
-    api_key: api_key  
+    api_key: arr_api_key  
        
     delete_old_custom_formats: true
     replace_existing_custom_formats: true

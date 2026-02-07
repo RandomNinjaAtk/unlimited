@@ -28,7 +28,7 @@ sonarr:
         upgrade:
           allowed: true
           until_quality: WEBDL-1080p
-          until_score: 25000
+          until_score: 23000
         score_set: default
         quality_sort: top
         qualities:
@@ -46,7 +46,7 @@ sonarr:
           - name: SDTV
 
       - name: 2160p
-        min_format_score: 20000
+        min_format_score: 24000
         reset_unmatched_scores:
           enabled: true
         upgrade:
@@ -79,7 +79,7 @@ sonarr:
         upgrade:
           allowed: true
           until_quality: WEBDL-2160p
-          until_score: 25000
+          until_score: 24000
         score_set: default
         quality_sort: top
         qualities:

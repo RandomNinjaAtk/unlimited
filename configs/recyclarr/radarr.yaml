@@ -71,6 +71,52 @@ radarr:
               - Bluray-480p
               - WEBDL-480p
           - name: DVD
+
+      - name: 2160p
+        min_format_score: 20000
+        reset_unmatched_scores:
+          enabled: true
+        upgrade:
+          allowed: true
+          until_quality: Bluray|WEB-2160p
+          until_score: 25000
+        score_set: default
+        quality_sort: top
+        qualities:
+          - name: Bluray|WEB-2160p
+            qualities:
+              - Bluray-2160p
+              - WEBDL-2160p
+          - name: Bluray|WEB-1080p
+            qualities:
+              - Bluray-1080p
+              - WEBDL-1080p
+          - name: Bluray|WEB-720p
+            qualities:
+              - WEBDL-720p
+              - Bluray-720p
+          - name: Bluray|WEB-480p
+            qualities:
+              - Bluray-576p
+              - Bluray-480p
+              - WEBDL-480p
+          - name: DVD
+
+      - name: 2160p Only
+        min_format_score: 20000
+        reset_unmatched_scores:
+          enabled: true
+        upgrade:
+          allowed: true
+          until_quality: Bluray|WEB-2160p
+          until_score: 25000
+        score_set: default
+        quality_sort: top
+        qualities:
+          - name: Bluray|WEB-2160p
+            qualities:
+              - Bluray-2160p
+              - WEBDL-2160p
           
       - name: SQP-1 WEB (1080p)
         # Uncomment the below line if you don't have access to top-tier indexers
@@ -156,6 +202,10 @@ radarr:
         - 9170d55c319f4fe40da8711ba9d8050d # x265
         assign_scores_to:
           - name: 1080p
+            score: 20000
+          - name: 2160p
+            score: 20000
+          - name: 2160p Only
             score: 20000
             
       - trash_ids:
@@ -255,6 +305,8 @@ radarr:
         - cae4ca30163749b891686f95532519bd # AV1
         assign_scores_to:
           - name: 1080p
+          - name: 2160p
+          - name: 2160p Only
 
       - trash_ids:
         # [No Category]
@@ -265,6 +317,10 @@ radarr:
         - e77382bcfeba57cb83744c9c5449b401 # 7.1 Surround
         assign_scores_to:
           - name: 1080p
+            score: 10
+          - name: 2160p
+            score: 10
+          - name: 2160p Only
             score: 10
             
       - trash_ids:
@@ -277,6 +333,10 @@ radarr:
         - 240770601cc226190c367ef59aba7463 # AAC
         assign_scores_to:
           - name: 1080p
+            score: 5
+          - name: 2160p
+            score: 5
+          - name: 2160p Only
             score: 5
             
       - trash_ids:
@@ -295,8 +355,10 @@ radarr:
         assign_scores_to:
           - name: 1080p
             score: -10
-
-
+          - name: 2160p
+            score: -10
+          - name: 2160p Only
+            score: -10
     
       - trash_ids:
         # Movie Versions

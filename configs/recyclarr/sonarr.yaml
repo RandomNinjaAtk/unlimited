@@ -36,6 +36,32 @@ sonarr:
       - template: sonarr-v4-custom-formats-anime
 
     quality_profiles:
+      - name: 1080p
+        min_format_score: 20000
+        reset_unmatched_scores:
+          enabled: true
+        upgrade:
+          allowed: true
+          until_quality: Bluray|WEB-1080p
+          until_score: 25000
+        score_set: default
+        quality_sort: top
+        qualities:
+          - name: Bluray|WEB-1080p
+            qualities:
+              - Bluray-1080p
+              - WEBDL-1080p
+          - name: Bluray|WEB-720p
+            qualities:
+              - WEBDL-720p
+              - Bluray-720p
+          - name: Bluray|WEB-480p
+            qualities:
+              - Bluray-576p
+              - Bluray-480p
+              - WEBDL-480p
+          - name: DVD
+          
       - name: Remux-1080p - Anime
         reset_unmatched_scores:
           enabled: true

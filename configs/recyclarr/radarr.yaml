@@ -277,8 +277,6 @@ radarr:
             score: 5
             
       - trash_ids:
-        # [No Category]
-        - 2051402ee9ca81162017d98cbe1dff2c # Wrong Language
         # Language profiles
         - 0dc8aec3bd1c47cd6c40c46ecd27e846 # Language: Not English
         # Movie Versions

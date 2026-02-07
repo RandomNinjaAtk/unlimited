@@ -315,6 +315,8 @@ radarr:
         - 77ff61788dfe1097194fd8743d7b4524 # 5.1 Surround
         - 6fd7b090c3f7317502ab3b63cc7f51e3 # 6.1 Surround
         - e77382bcfeba57cb83744c9c5449b401 # 7.1 Surround
+        # Audio Formats
+        - a061e2e700f81932daf888599f8a8273 # Opus
         assign_scores_to:
           - name: 1080p
             score: 10

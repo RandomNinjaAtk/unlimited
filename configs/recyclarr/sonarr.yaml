@@ -59,6 +59,48 @@ sonarr:
           - name: WEBRip-480p
           - name: DVD
           - name: SDTV
+
+      - name: 2160p
+        min_format_score: 20000
+        reset_unmatched_scores:
+          enabled: true
+        upgrade:
+          allowed: true
+          until_quality: WEB-2160p
+          until_score: 25000
+        score_set: default
+        quality_sort: top
+        qualities:
+          - name: WEB-2160p
+          - name: Bluray-2160p
+          - name: WEBRip-2160p
+          - name: WEB-1080p
+          - name: Bluray-1080p
+          - name: WEBRip-1080p
+          - name: WEBDL-720p
+          - name: Bluray-720p
+          - name: WEBRip-720p
+          - name: WEB-480p
+          - name: Bluray-576p
+          - name: Bluray-480p
+          - name: WEBRip-480p
+          - name: DVD
+          - name: SDTV
+
+      - name: 2160p Only
+        min_format_score: 20000
+        reset_unmatched_scores:
+          enabled: true
+        upgrade:
+          allowed: true
+          until_quality: WEB-2160p
+          until_score: 25000
+        score_set: default
+        quality_sort: top
+        qualities:
+          - name: WEB-2160p
+          - name: Bluray-2160p
+          - name: WEBRip-2160p
           
       - name: Remux-1080p - Anime
         reset_unmatched_scores:

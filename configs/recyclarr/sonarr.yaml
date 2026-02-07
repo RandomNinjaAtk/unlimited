@@ -53,7 +53,7 @@ sonarr:
           - name: WEBDL-720p
           - name: Bluray-720p
           - name: WEBRip-720p
-          - name: WEB-480p
+          - name: WEBDL-480p
           - name: Bluray-576p
           - name: Bluray-480p
           - name: WEBRip-480p
@@ -80,7 +80,7 @@ sonarr:
           - name: WEBDL-720p
           - name: Bluray-720p
           - name: WEBRip-720p
-          - name: WEB-480p
+          - name: WEBDL-480p
           - name: Bluray-576p
           - name: Bluray-480p
           - name: WEBRip-480p

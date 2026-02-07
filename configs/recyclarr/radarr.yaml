@@ -198,8 +198,18 @@ radarr:
     custom_formats:
       - trash_ids:
         # Miscellaneous
-        - 2899d84dc9372de3408e6d8cc18e9666 # x264
         - 9170d55c319f4fe40da8711ba9d8050d # x265
+        assign_scores_to:
+          - name: 1080p
+            score: 20005
+          - name: 2160p
+            score: 20005
+          - name: 2160p Only
+            score: 20005
+            
+      - trash_ids:
+        # Miscellaneous
+        - 2899d84dc9372de3408e6d8cc18e9666 # x264
         assign_scores_to:
           - name: 1080p
             score: 20000

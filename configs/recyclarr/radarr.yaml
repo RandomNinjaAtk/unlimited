@@ -45,13 +45,35 @@ radarr:
       #- template: radarr-quality-profile-anime
       - template: radarr-custom-formats-anime
 
-    quality_profiles:     
+    quality_profiles:
+      - name: 1080p
+        # Uncomment the below line if you don't have access to top-tier indexers
+        min_format_score: 20000
+        upgrade:
+          allowed: true
+          until_score: 25000
+        qualities:
+          - name: Bluray|WEB-1080p
+            qualities:
+              - Bluray-1080p
+              - WEBDL-1080p
+          - name: Bluray|WEB-720p
+            qualities:
+              - WEBDL-720p
+              - Bluray-720p
+          - name: Bluray|WEB-480p
+            qualities:
+              - Bluray-576p
+              - Bluray-480p
+              - WEBDL-480p
+          - name: DVD
+          
       - name: SQP-1 WEB (1080p)
         # Uncomment the below line if you don't have access to top-tier indexers
         min_format_score: 10
         upgrade:
           allowed: true
-          until_score: 1500
+          until_score: 15000
         qualities:
           - name: Bluray|WEB-1080p
             qualities:
@@ -124,6 +146,34 @@ radarr:
           - name: SDTV
 
     custom_formats:
+      - trash_ids:
+        # Miscellaneous
+        - 2899d84dc9372de3408e6d8cc18e9666 # x264
+        - 9170d55c319f4fe40da8711ba9d8050d # x265
+        assign_scores_to:
+          - name: 1080p
+            score: 20000
+            
+      - trash_ids:
+        # [No Category]
+        - 9681750c690210f0936faed781bb7f06 # 126811
+        - e098247bc6652dd88c76644b275260ed # FLUX
+        - 2051402ee9ca81162017d98cbe1dff2c # Wrong Language
+        # Audio Formats
+        - c2998bd0d90ed5621d8df281e839436e # DD
+        - 185f1dd7264c4562b9022d963ac37424 # DD+
+        - 1af239278386be2919e1bcee0bde047e # DD+ ATMOS
+        # HDR Optional
+        - 923b6abef9b17f937fab56cfcf89e1f1 # DV (w/o HDR fallback)
+        # Miscellaneous
+        - e7718d7a3ce595f289bfee26adc178f5 # Repack/Proper
+        - ae43b294509409a6a13919dedd4764c4 # Repack2
+        - 5caaaa1c08c1742aa4342d8c4cc463f2 # Repack3
+        assign_scores_to:
+          - name: 1080p
+
+
+    
       - trash_ids:
         # Movie Versions
         # Uncomment any of the next six lines to prefer these movie versions

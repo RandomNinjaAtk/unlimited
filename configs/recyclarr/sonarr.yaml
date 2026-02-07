@@ -139,8 +139,6 @@ sonarr:
         # [No Category]
           - 5d9fd1b1e06cd8a475462f40214b7df6 # FLUX
           - 4a20cfb76b5f92a8ca22b894b32e71be # Multi-Episode
-          - e0c1a67f23908a55b6ae9834e8ed6727 # Single Episode
-          
 
         # Audio Channels
           - bd6dd5e043aa27ff4696a08d011c7d96 # 1.0 Mono
@@ -150,6 +148,13 @@ sonarr:
           - 3fbafa924f361e66fbc6187af82dfa85 # 5.1 Surround
           - 9fb6d778592c293467437593ef394bf1 # 6.1 Surround
           - 204c8c3e7315bb0ea81332774fa888d6 # 7.1 Surround
+
+        # Audio Formats
+          - a50b8a0c62274a7c38b09a9619ba9d86 # AAC
+          - dbe00161b08a25ac6154c55f95e6318d # DD
+          - 63487786a8b01b7f20dd2bc90dd4a477 # DD+
+          - 4232a509ce60c4e208d13825b7c06264 # DD+ ATMOS
+          - 28f6ef16d61e2d1adfce3156ed8257e3 # Opus
 
         # General Streaming Services
           - d660701077794679fd59e8bdf4ce3a29 # AMZN
@@ -192,14 +197,7 @@ sonarr:
           - d84935abd3f8556dcd51d4f27e22d0a6 # WEB Tier 03
 
         # Language profiles
-          - 8a9fcdbb445f2add0505926df3bb7b8a # German
-          - ed51973a811f51985f14e2f6f290e47a # German DL
-          - c5dd0fd675f85487ad5bdf97159180bd # German DL (undefined)
-          - 69aa1e159f97d860440b04cd6d590c4f # Language: Not English
-          - 322fca6f8f3694acc1401ddb530fd33d # Language: Not French
           - ae575f95ab639ba5d15f663bf019e3e8 # Language: Not Original
-          - 10e77b96ae4770a7de645a91a53ce29a # Language: Original + French
-          - 133589380b89f8f8394320901529bac1 # Not German or English
 
         # Miscellaneous
           - 290078c8b266272a5cc8e251b5e2eb0b # 1080p
@@ -210,20 +208,13 @@ sonarr:
           - 1bd69272e23c5e6c5b1d6c8a36fce95e # HFR
           - 5ab46ff851b76c337e13e81a4353875f # INTERNAL
           - 4aee45b0868229c4fbd8bad3e315f1d0 # MPEG2
-          - 7ba05c6e0e14e793538174c679126996 # MULTi
-          - 82d40da2bc6923f41e14394075dd4b03 # No-RlsGroup
-          - e1a997ddb54e3ecbfe06341ad323c458 # Obfuscated
           - ec8fa7296b64e8cd390a1600981f3923 # Repack/Proper
           - eb3d5cc0a2be0db205fb823640db6a3c # Repack2
           - 44e7c4de10ae50265753082e5dc76047 # Repack3
-          - 06d66ab109d4d2eddb2794d21526d140 # Retags
-          - 1b3994c551cbb92a2c781af061f4ab44 # Scene
-          - 3bc5f395426614e155e585a2f056cdf1 # Season Pack
           - 7470a681e6205243983c4410ee4c920f # VC-1
           - 90501962793d580d011511155c97e4e5 # VP9
           - cddfb4e32db826151d97352b8e37c648 # x264
           - c9eafd50846d299b862ca9bb6ea91950 # x265
-          - 9b64dff695c2115facf1b6ea59c9bd07 # x265 (no HDR/DV)
           - 041d90b435ebd773271cea047a457a6a # x266
 
         # Optional Streaming Services
@@ -245,6 +236,78 @@ sonarr:
           - name: 1080p
           - name: 2160p
           - name: 2160p Only
+
+      - trash_ids:
+        # Miscellaneous
+          - cddfb4e32db826151d97352b8e37c648 # x264
+          - c9eafd50846d299b862ca9bb6ea91950 # x265
+        assign_scores_to:
+          - name: 1080p
+            score: 20000
+          - name: 2160p
+            score: 20000
+          - name: 2160p Only
+            score: 20000
+
+      - trash_ids:
+        # [No Category]
+          - e0c1a67f23908a55b6ae9834e8ed6727 # Single Episode
+        # Audio Channels
+          - 3fbafa924f361e66fbc6187af82dfa85 # 5.1 Surround
+          - 9fb6d778592c293467437593ef394bf1 # 6.1 Surround
+          - 204c8c3e7315bb0ea81332774fa888d6 # 7.1 Surround
+        # Miscellaneous
+          - 3bc5f395426614e155e585a2f056cdf1 # Season Pack
+        # Audio Formats
+          - 28f6ef16d61e2d1adfce3156ed8257e3 # Opus
+        assign_scores_to:
+          - name: 1080p
+            score: 10
+          - name: 2160p
+            score: 10
+          - name: 2160p Only
+            score: 10
+
+      - trash_ids:
+        # Audio Channels
+          - bd6dd5e043aa27ff4696a08d011c7d96 # 1.0 Mono
+          - 834e534f103938853ffced4203b53e72 # 2.0 Stereo
+          - 42cba7e38c7947a6d1d0a62580ee6d62 # 3.0 Sound
+          - 1895195e84767de180653914ce207245 # 4.0 Sound
+        # Audio Formats
+          - a50b8a0c62274a7c38b09a9619ba9d86 # AAC
+        assign_scores_to:
+          - name: 1080p
+            score: 5
+          - name: 2160p
+            score: 5
+          - name: 2160p Only
+            score: 5
+
+      - trash_ids:
+        # [No Category]
+          - 4a20cfb76b5f92a8ca22b894b32e71be # Multi-Episode
+        # Miscellaneous
+          - 7ba05c6e0e14e793538174c679126996 # MULTi
+          - 82d40da2bc6923f41e14394075dd4b03 # No-RlsGroup
+          - e1a997ddb54e3ecbfe06341ad323c458 # Obfuscated
+          - 06d66ab109d4d2eddb2794d21526d140 # Retags
+          - 1b3994c551cbb92a2c781af061f4ab44 # Scene
+        # Language profiles
+          - 8a9fcdbb445f2add0505926df3bb7b8a # German
+          - ed51973a811f51985f14e2f6f290e47a # German DL
+          - c5dd0fd675f85487ad5bdf97159180bd # German DL (undefined)
+          - 69aa1e159f97d860440b04cd6d590c4f # Language: Not English
+          - 322fca6f8f3694acc1401ddb530fd33d # Language: Not French
+          - 10e77b96ae4770a7de645a91a53ce29a # Language: Original + French
+          - 133589380b89f8f8394320901529bac1 # Not German or English
+        assign_scores_to:
+          - name: 1080p
+            score: -10
+          - name: 2160p
+            score: -10
+          - name: 2160p Only
+            score: -10
 
     
       - trash_ids:

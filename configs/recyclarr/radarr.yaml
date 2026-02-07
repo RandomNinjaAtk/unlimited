@@ -259,18 +259,9 @@ radarr:
         - 0d91270a7255a1e388fa85e959f359d8 # FreeLeech
         - 73613461ac2cea99d52c4cd6e177ab82 # HFR
         - 182fa1c42a2468f8488e6dcf75a81b81 # INTERNAL
-        - ff86c4326018682f817830ced463332b # MPEG2
-        - 4b900e171accbfb172729b63323ea8ca # MULTi
-        - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5 # No-RlsGroup
-        - 7357cf5161efbf8c4d5d0c30b4815ee2 # Obfuscated
         - e7718d7a3ce595f289bfee26adc178f5 # Repack/Proper
         - ae43b294509409a6a13919dedd4764c4 # Repack2
         - 5caaaa1c08c1742aa4342d8c4cc463f2 # Repack3
-        - 5c44f52a8714fdd79bb4d98e2673be1f # Retags
-        - f537cf427b64c38c8e36298f657e4828 # Scene
-        - 11cd1db7165d6a7ad9a83bc97b8b1060 # VC-1
-        - ae4cfaa9283a4f2150ac3da08e388723 # VP9
-        - 390455c22a9cac81a738f6cbad705c3c # x266
         # Movie Versions
         - 0f12c086e289cf966fa5948eac571f44 # Hybrid
         - eecf3a857724171f968a66cb5719e152 # IMAX
@@ -360,6 +351,10 @@ radarr:
         - db9b4c4b53d312a3ca5f1378f6440fc9 # Vinegar Syndrome
         # Miscellaneous
         - 4b900e171accbfb172729b63323ea8ca # MULTi
+        - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5 # No-RlsGroup
+        - 7357cf5161efbf8c4d5d0c30b4815ee2 # Obfuscated
+        - 5c44f52a8714fdd79bb4d98e2673be1f # Retags
+        - f537cf427b64c38c8e36298f657e4828 # Scene
         assign_scores_to:
           - name: 1080p
             score: -10

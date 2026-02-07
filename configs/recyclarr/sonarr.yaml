@@ -243,6 +243,8 @@ sonarr:
           - 23297a736ca77c0fc8e70f8edd7ee56c # Upscaled
         assign_scores_to:
           - name: 1080p
+          - name: 2160p
+          - name: 2160p Only
 
     
       - trash_ids:

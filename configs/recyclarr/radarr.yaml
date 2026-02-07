@@ -198,7 +198,6 @@ radarr:
         - 403816d65392c79236dcb6dd591aeda4 # WEB Tier 02
         - af94e0fe497124d1f9ce732069ec8c3b # WEB Tier 03
         # Language profiles
-        - 0dc8aec3bd1c47cd6c40c46ecd27e846 # Language: Not English
         - d6e9318c875905d6cfb5bee961afcea9 # Language: Not Original        
         # Miscellaneous
         - 820b09bb9acbfde9c35c71e0e565dad8 # 1080p
@@ -264,6 +263,38 @@ radarr:
         - bfd8eb01832d646a0a89c4deb46f8564 # Upscaled
         assign_scores_to:
           - name: 1080p
+
+      - trash_ids:
+        # [No Category]
+        - 8df7fe4569063d39319f07e69707285a # WEBDL Boost
+        # Audio Channels
+        - 77ff61788dfe1097194fd8743d7b4524 # 5.1 Surround
+        - 6fd7b090c3f7317502ab3b63cc7f51e3 # 6.1 Surround
+        - e77382bcfeba57cb83744c9c5449b401 # 7.1 Surround
+        assign_scores_to:
+          - name: 1080p
+            score: 10
+            
+      - trash_ids:
+        # Audio Channels
+        - b124be9b146540f8e62f98fe32e49a2a # 1.0 Mono
+        - 89dac1be53d5268a7e10a19d3c896826 # 2.0 Stereo
+        - 205125755c411c3b8622ca3175d27b37 # 3.0 Sound
+        - 373b58bd188fc00c817bd8c7470ea285 # 4.0 Sound
+        assign_scores_to:
+          - name: 1080p
+            score: 5
+            
+      - trash_ids:
+        # [No Category]
+        - 2051402ee9ca81162017d98cbe1dff2c # Wrong Language
+        # Language profiles
+        - 0dc8aec3bd1c47cd6c40c46ecd27e846 # Language: Not English
+        # Miscellaneous
+        - 4b900e171accbfb172729b63323ea8ca # MULTi
+        assign_scores_to:
+          - name: 1080p
+            score: -10
 
 
     

@@ -150,11 +150,9 @@ sonarr:
           - 204c8c3e7315bb0ea81332774fa888d6 # 7.1 Surround
 
         # Audio Formats
-          - a50b8a0c62274a7c38b09a9619ba9d86 # AAC
           - dbe00161b08a25ac6154c55f95e6318d # DD
           - 63487786a8b01b7f20dd2bc90dd4a477 # DD+
           - 4232a509ce60c4e208d13825b7c06264 # DD+ ATMOS
-          - 28f6ef16d61e2d1adfce3156ed8257e3 # Opus
 
         # General Streaming Services
           - d660701077794679fd59e8bdf4ce3a29 # AMZN

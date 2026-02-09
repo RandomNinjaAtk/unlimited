@@ -10,10 +10,11 @@ Process () {
 	if [ -f "$recyclarrConfigFile" ]; then
 		rm "$recyclarrConfigFile"
 	fi
-	cp /git-sync/configs/recyclarr/$folder.yaml "$recyclarrConfigFile"
+	cp /config/$folder.yaml "$recyclarrConfigFile"
 	if [ -f "$recyclarrConfigFile" ]; then
 		sed -i "s%arr_api_key%$arrApiKey%g" "$recyclarrConfigFile"
 	fi
+	chmod 777 "$recyclarrConfigFile"
 }
 
 if [ ! -d /recyclarr/configs ]; then

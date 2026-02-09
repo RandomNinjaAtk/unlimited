@@ -1,6 +1,7 @@
 echo "Downloading Scripts"
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/scripts/prowlarr.bash" -o /config/prowlarr.bash
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/scripts/radarr.bash" -o /config/radarr.bash
+curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/scripts/sonarr.bash" -o /config/sonarr.bash
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/scripts/recyclarr.bash" -o /config/recyclarr.bash
 
 echo "Downloading Configs"
@@ -13,5 +14,6 @@ chmod 777 -R /config/*
 echo "Exectuing Scripts"
 bash /config/prowlarr.bash
 bash /config/radarr.bash
+bash /config/sonarr.bash
 bash /config/recyclarr.bash
 exit

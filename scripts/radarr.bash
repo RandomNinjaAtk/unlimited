@@ -2,7 +2,7 @@
 arrApiKey="$(sed -n '/<ApiKey>/{s/.*<ApiKey>//;s/<\/ApiKey.*//;p;}' /radarr/config.xml)"
 
 echo "Configure Root Folder"
-curl -s 'http://unlimited_radarr:7899/api/v3/rootFolder' \
+curl -s 'http://unlimited_radarr:7878/api/v3/rootFolder' \
   -X 'POST' \
   -H 'Content-Type: application/json' \
   -H "X-Api-Key: $arrApiKey" \
@@ -10,7 +10,7 @@ curl -s 'http://unlimited_radarr:7899/api/v3/rootFolder' \
   
 
 echo "Configure Settings"
-curl -s 'http://unlimited_radarr:7899/api/v3/config/mediamanagement' \
+curl -s 'http://unlimited_radarr:7878/api/v3/config/mediamanagement' \
   -X 'PUT' \
   -H 'Content-Type: application/json' \
   -H "X-Api-Key: $arrApiKey" \

@@ -211,12 +211,21 @@ sonarr:
             score: 20000
 
       - trash_ids:
+        # Miscellaneous
+          - 3bc5f395426614e155e585a2f056cdf1 # Season Pack
+        assign_scores_to:
+          - name: 1080p
+            score: 2000
+          - name: 2160p
+            score: 2000
+          - name: 2160p Only
+            score: 2000
+
+      - trash_ids:
         # Audio Channels
           - 3fbafa924f361e66fbc6187af82dfa85 # 5.1 Surround
           - 9fb6d778592c293467437593ef394bf1 # 6.1 Surround
           - 204c8c3e7315bb0ea81332774fa888d6 # 7.1 Surround
-        # Miscellaneous
-          - 3bc5f395426614e155e585a2f056cdf1 # Season Pack
         # Audio Formats
           - 28f6ef16d61e2d1adfce3156ed8257e3 # Opus
          # Language profiles

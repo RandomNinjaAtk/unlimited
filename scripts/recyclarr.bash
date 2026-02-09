@@ -16,6 +16,11 @@ Process () {
 	fi
 }
 
+if [ ! -d /recyclarr/configs ]; then
+	mkdir -p /recyclarr/configs
+	chmod 777 /recyclarr/configs
+fi
+
 Process "radarr"
 Process "sonarr"
 

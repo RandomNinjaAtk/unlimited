@@ -6,7 +6,7 @@ curl -s 'http://unlimited_sonarr:8989/api/v3/rootFolder' \
   -X 'POST' \
   -H 'Content-Type: application/json' \
   -H "X-Api-Key: $arrApiKey" \
-  --data-raw '{"path":"/mnt/user/appdata/unlimited/data/media/radarr/"}'
+  --data-raw '{"path":"/mnt/user/appdata/unlimited/data/media/sonarr/"}'
   
 
 echo "Configure Settings"

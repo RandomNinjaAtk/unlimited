@@ -26,10 +26,9 @@ radarr:
         rename: true
         standard: plex-tmdb
 
-    # Include Configuration
-    include:
-      # Quality Definitions
-      - template: radarr-quality-definition-sqp-streaming
+    # Quality Definition Configuration
+    quality_definition:
+      type: movie
 
     quality_profiles:
       - name: 1080p

@@ -16,9 +16,10 @@ sonarr:
         daily: default
         anime: default
 
-    include:
-      # Comment out any of the following includes to disable them
-      - template: sonarr-quality-definition-series
+    # Quality Definition Configuration
+    quality_definition:
+      type: series
+      preferred_ratio: 0.5
       
     quality_profiles:
       - name: 1080p

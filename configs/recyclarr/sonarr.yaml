@@ -183,6 +183,7 @@ sonarr:
           - 9c11cd3f07101cdba90a2d81cf0e56b4 # LQ
           - e2315f990da2e2cbfc9fa5b7a6fcfe48 # LQ (Release Title)
           - 23297a736ca77c0fc8e70f8edd7ee56c # Upscaled
+          - 47435ece6b99a0b477caf360e79ba0bb # x265 (HD)
         assign_scores_to:
           - name: 1080p
           - name: 2160p
@@ -191,16 +192,6 @@ sonarr:
       - trash_ids:
         # Miscellaneous
           - c9eafd50846d299b862ca9bb6ea91950 # x265
-        assign_scores_to:
-          - name: 1080p
-            score: 20005
-          - name: 2160p
-            score: 20005
-          - name: 2160p Only
-            score: 20005
-
-      - trash_ids:
-        # Miscellaneous
           - cddfb4e32db826151d97352b8e37c648 # x264
         assign_scores_to:
           - name: 1080p

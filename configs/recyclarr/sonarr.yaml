@@ -207,11 +207,11 @@ sonarr:
           - 3bc5f395426614e155e585a2f056cdf1 # Season Pack
         assign_scores_to:
           - name: 1080p
-            score: 2000
+            score: 5000
           - name: 2160p
-            score: 2000
+            score: 5000
           - name: 2160p Only
-            score: 2000
+            score: 5000
 
       - trash_ids:
         # Audio Channels

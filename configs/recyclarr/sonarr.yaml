@@ -4,7 +4,6 @@ sonarr:
     api_key: arr_api_key
             
     delete_old_custom_formats: true
-    replace_existing_custom_formats: true
 
     # Media Naming Configuration
     media_naming:

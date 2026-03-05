@@ -15,6 +15,14 @@ Process () {
 		sed -i "s%arr_api_key%$arrApiKey%g" "$recyclarrConfigFile"
 	fi
 	chmod 777 "$recyclarrConfigFile"
+
+	recyclarrConfigFile="/recyclarr/includes/${folder}_custom_formats.yaml"
+	if [ -f /config/radarr_custom_formats.yaml ]; then
+		cp /config/radarr_custom_formats.yaml "$recyclarrConfigFile"
+		if [ -f "$recyclarrConfigFile" ]; then
+			sed -i "s%arr_api_key%$arrApiKey%g" "$recyclarrConfigFile"
+		fi
+		chmod 777 "$recyclarrConfigFile"
 }
 
 if [ ! -d /recyclarr/configs ]; then

@@ -16,7 +16,10 @@ echo "Setting Permissions:"
 chmod 777 -R /config/*
 
 echo "Exectuing Scripts"
-bash /config/prowlarr.bash
+bash /config/prowlarr.bash "radarr"
+bash /config/prowlarr.bash "radarr_4k"
+bash /config/prowlarr.bash "sonarr"
+bash /config/prowlarr.bash "sonarr_4k"
 bash /config/radarr.bash "radarr"
 bash /config/radarr.bash "radarr_4k"
 bash /config/sonarr.bash "sonarr"

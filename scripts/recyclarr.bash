@@ -23,6 +23,7 @@ Process () {
 			sed -i "s%arr_api_key%$arrApiKey%g" "$recyclarrConfigFile"
 		fi
 		chmod 777 "$recyclarrConfigFile"
+	fi
 }
 
 if [ ! -d /recyclarr/configs ]; then

@@ -28,12 +28,12 @@ Includes () {
 		fi
 		cp /config/${1}_custom_formats.yaml "$recyclarrConfigFile"
 	fi
-	recyclarrConfigFile="/recyclarr/includes/${folder}_quality.yaml"
-	if [ -f /config/${folder}_quality.yaml ]; then
+	recyclarrConfigFile="/recyclarr/includes/${1}_quality.yaml"
+	if [ -f /config/${1}_quality.yaml ]; then
 		if [ -f "$recyclarrConfigFile" ]; then
 			rm "$recyclarrConfigFile"
 		fi
-		cp /config/${folder}_quality.yaml "$recyclarrConfigFile"
+		cp /config/${1}_quality.yaml "$recyclarrConfigFile"
 	fi
 }
 

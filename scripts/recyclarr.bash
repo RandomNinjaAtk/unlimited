@@ -1,4 +1,4 @@
-version="1.1"
+version="1.2"
 scriptName="Recyclarr"
 Process () {
 
@@ -29,6 +29,13 @@ Includes () {
 			rm "$recyclarrConfigFile"
 		fi
 		cp /config/${folder}_custom_formats.yaml "$recyclarrConfigFile"
+	fi
+	recyclarrConfigFile="/recyclarr/includes/${folder}_quality.yaml"
+	if [ -f /config/${folder}_quality.yaml ]; then
+		if [ -f "$recyclarrConfigFile" ]; then
+			rm "$recyclarrConfigFile"
+		fi
+		cp /config/${folder}_quality.yaml "$recyclarrConfigFile"
 	fi
 }
 

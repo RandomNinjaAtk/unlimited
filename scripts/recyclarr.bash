@@ -1,4 +1,4 @@
-version="1.0"
+version="1.1"
 scriptName="Recyclarr"
 Process () {
 
@@ -44,6 +44,7 @@ fi
 
 echo ""
 echo "$version :: $scriptName"
+Process "radarr-4k"
 Process "radarr"
 Includes "radarr"
 Process "sonarr"

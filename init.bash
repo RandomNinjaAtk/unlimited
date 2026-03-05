@@ -14,6 +14,7 @@ chmod 777 -R /config/*
 echo "Exectuing Scripts"
 bash /config/prowlarr.bash
 bash /config/radarr.bash "radarr"
+bash /config/radarr.bash "radarr-4k"
 bash /config/sonarr.bash
 bash /config/recyclarr.bash
 exit

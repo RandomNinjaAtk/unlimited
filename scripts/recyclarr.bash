@@ -38,6 +38,10 @@ if [ ! -d /recyclarr/configs ]; then
 	chmod 777 /recyclarr/configs
 fi
 
+if [ ! -d /recyclarr/includes ]; then
+	mkdir -p /recyclarr/includes
+	chmod 777 /recyclarr/includes
+fi
 Process "radarr"
 Includes "radarr"
 Process "sonarr"

@@ -1,4 +1,4 @@
-version="1.3"
+version="1.4"
 scriptName="Recyclarr"
 Process () {
 
@@ -11,7 +11,7 @@ Process () {
 	if [ -f "$recyclarrConfigFile" ]; then
 		rm "$recyclarrConfigFile"
 	fi
-	cp /config/$folder.yaml "$recyclarrConfigFile"
+	cp /config/${2}.yaml "$recyclarrConfigFile"
 	if [ -f "$recyclarrConfigFile" ]; then
 		sed -i "s%arr_api_key_${1}%$arrApiKey%g" "$recyclarrConfigFile"
 	fi

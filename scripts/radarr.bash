@@ -1,5 +1,5 @@
 # Get Arr App information
-
+echo "Configuring $1"
 arrApiKey="$(sed -n '/<ApiKey>/{s/.*<ApiKey>//;s/<\/ApiKey.*//;p;}' /$1/config.xml)"
 
 echo "Configure Root Folder"

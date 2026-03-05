@@ -27,10 +27,6 @@ Includes () {
 			rm "$recyclarrConfigFile"
 		fi
 		cp /config/${folder}_custom_formats.yaml "$recyclarrConfigFile"
-		if [ -f "$recyclarrConfigFile" ]; then
-			sed -i "s%arr_api_key%$arrApiKey%g" "$recyclarrConfigFile"
-		fi
-		chmod 777 "$recyclarrConfigFile"
 	fi
 }
 

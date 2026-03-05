@@ -19,6 +19,7 @@ Process () {
 
 
 Includes () {
+	echo "Importing $1 include files"
 	folder="$1"
 	recyclarrConfigFile="/recyclarr/includes/${folder}_custom_formats.yaml"
 	if [ -f /config/${folder}_custom_formats.yaml ]; then

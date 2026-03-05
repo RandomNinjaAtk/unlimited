@@ -60,7 +60,7 @@ ApiKey "radarr-4k" "radarr"
 ApiKey "radarr" "radarr"
 Includes "radarr"
 ApiKey "sonarr" "sonarr"
-Includes "Sonarr"
+Includes "sonarr"
 
 
 

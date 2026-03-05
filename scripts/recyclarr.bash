@@ -20,11 +20,11 @@ Process () {
 
 Includes () {
 	recyclarrConfigFile="/recyclarr/includes/${folder}_custom_formats.yaml"
-	if [ -f /config/radarr_custom_formats.yaml ]; then
+	if [ -f /config/${folder}_custom_formats.yaml ]; then
 		if [ -f "$recyclarrConfigFile" ]; then
 			rm "$recyclarrConfigFile"
 		fi
-		cp /config/radarr_custom_formats.yaml "$recyclarrConfigFile"
+		cp /config/${folder}_custom_formats.yaml "$recyclarrConfigFile"
 		if [ -f "$recyclarrConfigFile" ]; then
 			sed -i "s%arr_api_key%$arrApiKey%g" "$recyclarrConfigFile"
 		fi

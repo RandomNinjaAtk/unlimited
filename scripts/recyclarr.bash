@@ -1,4 +1,4 @@
-version="1.7"
+version="1.0"
 scriptName="Recyclarr"
 
 RemoveOldConfig () {

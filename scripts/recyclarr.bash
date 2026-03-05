@@ -1,16 +1,20 @@
-version="1.5"
+version="1.6"
 scriptName="Recyclarr"
-Process () {
 
+RemoveOldConfig () {
+	echo "Removing $1.yaml"
+	recyclarrConfigFile="/recyclarr/configs/${1}.yaml"
+	if [ -f "$recyclarrConfigFile" ]; then
+		rm "$recyclarrConfigFile"
+	fi
+} 
+
+ApiKey () {
 	
 	# Get Arr App information
 	arrApiKey="$(sed -n '/<ApiKey>/{s/.*<ApiKey>//;s/<\/ApiKey.*//;p;}' /$1/config.xml)"
 
-	echo "Configuring recyclarr for $1"
-	recyclarrConfigFile="/recyclarr/configs/${2}.yaml"
-	if [ -f "$recyclarrConfigFile" ]; then
-		rm "$recyclarrConfigFile"
-	fi
+	echo "Adding API Key for recyclarr to $1"
 	cp /config/${2}.yaml "$recyclarrConfigFile"
 	if [ -f "$recyclarrConfigFile" ]; then
 		sed -i "s%arr_api_key_${1}%$arrApiKey%g" "$recyclarrConfigFile"
@@ -49,10 +53,12 @@ fi
 
 echo ""
 echo "$version :: $scriptName"
-Process "radarr-4k" "radarr"
-Process "radarr" "radarr"
+RemoveOldConfig "radarr"
+RemoveOldConfig "sonarr"
+ApiKey "radarr-4k" "radarr"
+ApiKey "radarr" "radarr"
 Includes "radarr"
-Process "sonarr" "sonarr"
+ApiKey "sonarr" "sonarr"
 Includes "Sonarr"
 
 

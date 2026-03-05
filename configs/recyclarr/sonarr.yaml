@@ -14,3 +14,8 @@ sonarr:
         standard: default
         daily: default
         anime: default
+
+    # Include Configuration
+    include:
+      - config: sonarr_custom_formats.yaml
+      - config: sonarr_quality.yaml

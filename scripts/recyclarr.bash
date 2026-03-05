@@ -42,6 +42,7 @@ if [ ! -d /recyclarr/includes ]; then
 	chmod 777 /recyclarr/includes
 fi
 
+echo ""
 echo "$version :: $scriptName"
 Process "radarr"
 Includes "radarr"

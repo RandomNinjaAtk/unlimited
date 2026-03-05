@@ -59,6 +59,7 @@ RemoveOldConfig "sonarr"
 ApiKey "radarr_4k" "radarr"
 ApiKey "radarr" "radarr"
 Includes "radarr"
+ApiKey "sonarr_4k" "sonarr"
 ApiKey "sonarr" "sonarr"
 Includes "sonarr"
 

@@ -12,7 +12,7 @@ Process () {
 	fi
 	cp /config/$folder.yaml "$recyclarrConfigFile"
 	if [ -f "$recyclarrConfigFile" ]; then
-		sed -i "s%arr_api_key%$arrApiKey%g" "$recyclarrConfigFile"
+		sed -i "s%arr_api_key_$folder%$arrApiKey%g" "$recyclarrConfigFile"
 	fi
 	chmod 777 "$recyclarrConfigFile"
 }

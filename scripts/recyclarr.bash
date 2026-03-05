@@ -7,6 +7,7 @@ RemoveOldConfig () {
 	if [ -f "$recyclarrConfigFile" ]; then
 		rm "$recyclarrConfigFile"
 	fi
+	cp /config/${1}.yaml "$recyclarrConfigFile"
 } 
 
 ApiKey () {
@@ -16,9 +17,8 @@ ApiKey () {
 
 	echo "Adding API Key for recyclarr to $1"
 	recyclarrConfigFile="/recyclarr/configs/${2}.yaml"
-	cp /config/${2}.yaml "$recyclarrConfigFile"
 	if [ -f "$recyclarrConfigFile" ]; then
-		sed -i "s%arr_api_key_${1}%$arrApiKey%g" "$recyclarrConfigFile"
+		sed -i "s%arr_api_${1}_key%$arrApiKey%g" "$recyclarrConfigFile"
 	fi
 	chmod 777 "$recyclarrConfigFile"
 }
@@ -61,7 +61,5 @@ ApiKey "radarr" "radarr"
 Includes "radarr"
 ApiKey "sonarr" "sonarr"
 Includes "sonarr"
-
-
 
 exit

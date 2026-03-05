@@ -1,3 +1,5 @@
+version="1.0"
+scriptName="Recyclarr"
 Process () {
 
 	folder="$1"
@@ -39,6 +41,8 @@ if [ ! -d /recyclarr/includes ]; then
 	mkdir -p /recyclarr/includes
 	chmod 777 /recyclarr/includes
 fi
+
+echo "$version :: $scriptName"
 Process "radarr"
 Includes "radarr"
 Process "sonarr"

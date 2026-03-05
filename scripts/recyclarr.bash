@@ -1,4 +1,4 @@
-version="1.6"
+version="1.7"
 scriptName="Recyclarr"
 
 RemoveOldConfig () {
@@ -15,6 +15,7 @@ ApiKey () {
 	arrApiKey="$(sed -n '/<ApiKey>/{s/.*<ApiKey>//;s/<\/ApiKey.*//;p;}' /$1/config.xml)"
 
 	echo "Adding API Key for recyclarr to $1"
+	recyclarrConfigFile="/recyclarr/configs/${2}.yaml"
 	cp /config/${2}.yaml "$recyclarrConfigFile"
 	if [ -f "$recyclarrConfigFile" ]; then
 		sed -i "s%arr_api_key_${1}%$arrApiKey%g" "$recyclarrConfigFile"

@@ -7,7 +7,7 @@ curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main
 echo "Downloading Configs"
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/radarr.yaml" -o /config/radarr.yaml
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/includes/radarr_custom_formats.yaml" -o /config/radarr_custom_formats.yaml
-curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/includes/radarr_custom_formats.yaml" -o /config/radarr-4k_custom_formats.yaml
+curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/includes/radarr_quality.yaml" -o /config/radarr_quality.yaml
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/sonarr.yaml" -o /config/sonarr.yaml
 
 echo "Setting Permissions:"

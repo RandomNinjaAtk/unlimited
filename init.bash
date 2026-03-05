@@ -19,7 +19,7 @@ echo "Exectuing Scripts"
 bash /config/prowlarr.bash
 bash /config/radarr.bash "radarr"
 bash /config/radarr.bash "radarr_4k"
-bash /config/sonarr.bash
+bash /config/sonarr.bash "sonarr"
 bash /config/sonarr.bash "sonarr_4k"
 bash /config/recyclarr.bash
 exit

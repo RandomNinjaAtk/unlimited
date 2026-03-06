@@ -8,6 +8,7 @@ echo "Downloading Configs"
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/radarr.yaml" -o /config/radarr.yaml
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/includes/radarr_custom_formats.yaml" -o /config/radarr_custom_formats.yaml
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/includes/radarr_quality.yaml" -o /config/radarr_quality.yaml
+curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/includes/radarr_remux.yaml" -o /config/radarr_remux.yaml
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/sonarr.yaml" -o /config/sonarr.yaml
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/includes/sonarr_custom_formats.yaml" -o /config/sonarr_custom_formats.yaml
 curl "https://raw.githubusercontent.com/RandomNinjaAtk/unlimited/refs/heads/main/configs/recyclarr/includes/sonarr_quality.yaml" -o /config/sonarr_quality.yaml

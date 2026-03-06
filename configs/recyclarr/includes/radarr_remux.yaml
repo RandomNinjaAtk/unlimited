@@ -1,0 +1,18 @@
+# Quality Definition Configuration
+quality_definition:
+  type: movie
+
+quality_profiles:
+  - name: Remux
+    min_format_score: 20000
+    reset_unmatched_scores:
+      enabled: true
+    upgrade:
+      allowed: true
+      until_quality: Remux-2160p
+      until_score: 25000
+    score_set: default
+    quality_sort: top
+    qualities:
+      - name: Remux-2160p
+      - name: Remux-1080p

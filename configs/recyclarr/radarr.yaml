@@ -18,6 +18,9 @@ radarr:
        
     delete_old_custom_formats: true
 
+    media_management:
+      propers_and_repacks: do_not_prefer
+
     # Media Naming Configuration
     media_naming:
       folder: plex-tmdb

@@ -4,7 +4,7 @@ quality_definition:
 
 quality_profiles:
   - name: Remux
-    min_format_score: 0
+    min_format_score: 1
     reset_unmatched_scores:
       enabled: true
     upgrade:

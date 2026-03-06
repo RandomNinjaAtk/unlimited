@@ -23,6 +23,7 @@ bash /config/prowlarr.bash "sonarr" "sonarr"
 bash /config/prowlarr.bash "sonarr_4k" "sonarr"
 bash /config/radarr.bash "radarr"
 bash /config/radarr.bash "radarr_4k"
+bash /config/radarr.bash "radarr_remux"
 bash /config/sonarr.bash "sonarr"
 bash /config/sonarr.bash "sonarr_4k"
 bash /config/recyclarr.bash

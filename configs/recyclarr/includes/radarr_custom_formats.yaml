@@ -22,8 +22,6 @@ custom_formats:
     - caa37d0df9c348912df1fb1d88f9273a # HDR10+ Boost
     # HDR Optional
     - f700d29429c023a5734505e77daeaea7 # DV (Disk)
-    - 923b6abef9b17f937fab56cfcf89e1f1 # DV (w/o HDR fallback)
-    - 25c12f78430a3a23413652cbd1d48d77 # SDR (no WEBDL)
     # HQ Release Groups
     - ed27ebfef2f323e964fb1f61391bcb35 # HD Bluray Tier 01
     - c20c8647f2746a1f4c4262b0fbbeeeae # HD Bluray Tier 02
@@ -175,6 +173,9 @@ custom_formats:
     - dcf3ec6938fa32445f590a4da84256cd # DTS-HD MA
     - 3cafb66171b47f226146a0770576870f # TrueHD
     - 496f355514737f7d83bf7aa4d24f8169 # TrueHD ATMOS
+    # HDR Optional
+    - 923b6abef9b17f937fab56cfcf89e1f1 # DV (w/o HDR fallback)
+    - 25c12f78430a3a23413652cbd1d48d77 # SDR (no WEBDL)
     # Movie Versions
     - eecf3a857724171f968a66cb5719e152 # IMAX
     - 9f6cbff8cfe4ebbc1bde14c7b7bec0de # IMAX Enhanced

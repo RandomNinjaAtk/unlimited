@@ -4,7 +4,7 @@ quality_definition:
 
 quality_profiles:
   - name: Remux
-    min_format_score: 20000
+    min_format_score: 0
     reset_unmatched_scores:
       enabled: true
     upgrade:
@@ -16,3 +16,34 @@ quality_profiles:
     qualities:
       - name: Remux-2160p
       - name: Remux-1080p
+
+custom_formats:           
+  - trash_ids:
+    # HQ Release Groups
+    - 3a3ff47579026e76d6504ebea39390de # Remux Tier 01
+    - 9f98181fe5a3fbeb0cc29340da2a468a # Remux Tier 02
+    - 8baaf0b3142bf4d94c42a724f034e27a # Remux Tier 03
+    assign_scores_to:
+      - name: Remux        
+
+  - trash_ids:
+    # HDR Optional
+    - 923b6abef9b17f937fab56cfcf89e1f1 # DV (w/o HDR fallback)
+    - 25c12f78430a3a23413652cbd1d48d77 # SDR (no WEBDL)
+    - 9c38ebb7384dada637be8899efa68e6f # SDR
+    # Unwanted
+    - ed38b889b31be83fda192888e2286d83 # BR-DISK
+    - e6886871085226c3da1830830146846c # Generated Dynamic HDR
+    - 90a6f9a284dff5103f6346090e6280c8 # LQ
+    - e204b80c87be9497a8a6eaff48f72905 # LQ (Release Title)
+    - b8cd450cbfa689c0259a01d9e29ba3d6 # 3D
+    - bfd8eb01832d646a0a89c4deb46f8564 # Upscaled
+    - 0a3f082873eb454bde444150b70253cc # Extras
+    - 712d74cd88bceb883ee32f773656b1f5 # Sing-Along Versions
+    - a5d148168c4506b55cf53984107c396e # Hi10P
+    - cae4ca30163749b891686f95532519bd # AV1
+    - dc98083864ea246d05a42df0d05f81cc # x265 (HD)
+    assign_scores_to:
+      - name: Remux
+        score: -999999
+

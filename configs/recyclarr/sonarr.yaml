@@ -5,6 +5,9 @@ sonarr:
             
     delete_old_custom_formats: true
 
+    media_management:
+      propers_and_repacks: do_not_prefer
+
     # Media Naming Configuration
     media_naming:
       series: plex-tvdb
@@ -25,6 +28,9 @@ sonarr:
     api_key: arr_api_sonarr_4k_key
             
     delete_old_custom_formats: true
+
+    media_management:
+      propers_and_repacks: do_not_prefer
 
     # Media Naming Configuration
     media_naming:

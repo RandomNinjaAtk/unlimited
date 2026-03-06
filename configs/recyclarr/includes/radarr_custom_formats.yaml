@@ -52,6 +52,8 @@ custom_formats:
     - e7718d7a3ce595f289bfee26adc178f5 # Repack/Proper
     - ae43b294509409a6a13919dedd4764c4 # Repack2
     - 5caaaa1c08c1742aa4342d8c4cc463f2 # Repack3
+    # Movie Versions
+    - 0f12c086e289cf966fa5948eac571f44 # Hybrid
     # Streaming Services
     - cc5e51a9e85a6296ceefe097a77f12f4 # BCORE
     - 16622a6911d1ab5d5b8b713d5b0036d4 # CRiT
@@ -174,7 +176,6 @@ custom_formats:
     - 3cafb66171b47f226146a0770576870f # TrueHD
     - 496f355514737f7d83bf7aa4d24f8169 # TrueHD ATMOS
     # Movie Versions
-    - 0f12c086e289cf966fa5948eac571f44 # Hybrid
     - eecf3a857724171f968a66cb5719e152 # IMAX
     - 9f6cbff8cfe4ebbc1bde14c7b7bec0de # IMAX Enhanced
     - e9001909a4c88013a359d0b9920d7bea # Theatrical Cut      

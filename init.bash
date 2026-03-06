@@ -18,6 +18,7 @@ chmod 777 -R /config/*
 echo "Exectuing Scripts"
 bash /config/prowlarr.bash "radarr" "radarr"
 bash /config/prowlarr.bash "radarr_4k" "radarr"
+bash /config/prowlarr.bash "radarr_remux" "radarr"
 bash /config/prowlarr.bash "sonarr" "sonarr"
 bash /config/prowlarr.bash "sonarr_4k" "sonarr"
 bash /config/radarr.bash "radarr"

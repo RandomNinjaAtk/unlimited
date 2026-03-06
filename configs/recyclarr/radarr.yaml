@@ -53,3 +53,24 @@ radarr:
     include:
       - config: radarr_custom_formats.yaml
       - config: radarr_quality.yaml
+
+  unlimited_radarr_remux:
+    base_url: http://unlimited_radarr_remux:7878
+    api_key: arr_api_radarr_remux_key
+       
+    delete_old_custom_formats: true
+
+    media_management:
+      propers_and_repacks: do_not_prefer
+
+    # Media Naming Configuration
+    media_naming:
+      folder: plex-tmdb
+      movie:
+        rename: true
+        standard: plex-tmdb
+
+   # Include Configuration
+    include:
+      - config: radarr_remux_custom_formats.yaml
+      - config: radarr_remux_quality.yaml

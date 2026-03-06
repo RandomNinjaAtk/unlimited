@@ -40,6 +40,13 @@ Includes () {
 		fi
 		cp /config/${1}_quality.yaml "$recyclarrConfigFile"
 	fi
+	recyclarrConfigFile="/recyclarr/includes/${1}.yaml"
+	if [ -f /config/${1}.yaml ]; then
+		if [ -f "$recyclarrConfigFile" ]; then
+			rm "$recyclarrConfigFile"
+		fi
+		cp /config/${1}.yaml "$recyclarrConfigFile"
+	fi
 }
 
 if [ ! -d /recyclarr/configs ]; then
@@ -57,6 +64,7 @@ echo "$version :: $scriptName"
 RemoveOldConfig "radarr"
 RemoveOldConfig "sonarr"
 ApiKey "radarr_4k" "radarr"
+ApiKey "radarr_remux" "radarr"
 ApiKey "radarr" "radarr"
 Includes "radarr"
 ApiKey "sonarr_4k" "sonarr"

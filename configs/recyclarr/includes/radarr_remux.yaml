@@ -19,12 +19,24 @@ quality_profiles:
 
 custom_formats:           
   - trash_ids:
+    # No Category
+    - ff5bc9e8ce91d46c997ca3ac6994d6f8 # FraMeSToR
+    - 2051402ee9ca81162017d98cbe1dff2c # Wrong Language
     # HQ Release Groups
     - 3a3ff47579026e76d6504ebea39390de # Remux Tier 01
     - 9f98181fe5a3fbeb0cc29340da2a468a # Remux Tier 02
     - 8baaf0b3142bf4d94c42a724f034e27a # Remux Tier 03
+    # Language profiles
+    - d6e9318c875905d6cfb5bee961afcea9 # Language: Not Original
     assign_scores_to:
-      - name: Remux        
+      - name: Remux
+      
+  - trash_ids:
+    # Language profiles
+    - 0dc8aec3bd1c47cd6c40c46ecd27e846 # Language: Not English
+    assign_scores_to:
+      - name: Remux
+        score: -100
 
   - trash_ids:
     # HDR Optional

@@ -4,7 +4,6 @@ custom_formats:
     - e098247bc6652dd88c76644b275260ed # FLUX
     - 8df7fe4569063d39319f07e69707285a # WEBDL Boost
     - 2051402ee9ca81162017d98cbe1dff2c # Wrong Language
-    - 7a0d1ad358fee9f5b074af3ef3f9d9ef # hallowed
     # Audio Channels
     - b124be9b146540f8e62f98fe32e49a2a # 1.0 Mono
     - 89dac1be53d5268a7e10a19d3c896826 # 2.0 Stereo
@@ -102,6 +101,17 @@ custom_formats:
         score: 20000
       - name: 2160p Only
         score: 20000
+
+  - trash_ids:
+    # [No Category]
+    - 7a0d1ad358fee9f5b074af3ef3f9d9ef # hallowed
+    assign_scores_to:
+      - name: 1080p
+        score: 10000
+      - name: 2160p
+        score: 10000
+      - name: 2160p Only
+        score: 10000
   
   - trash_ids:
     # [No Category]

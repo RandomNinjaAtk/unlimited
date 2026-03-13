@@ -101,11 +101,11 @@ custom_formats:
     - 5153ec7413d9dae44e24275589b5e944 # BHDStudio
     assign_scores_to:
       - name: 1080p
-        score: 15000
+        score: 10000
       - name: 2160p
-        score: 15000
+        score: 10000
       - name: 2160p Only
-        score: 15000
+        score: 10000
   
   - trash_ids:
     # [No Category]

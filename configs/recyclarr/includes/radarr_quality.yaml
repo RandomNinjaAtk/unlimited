@@ -10,7 +10,7 @@ quality_profiles:
     upgrade:
       allowed: true
       until_quality: Bluray|WEB-1080p
-      until_score: 25000
+      until_score: 40000
     score_set: default
     quality_sort: top
     qualities:
@@ -30,7 +30,7 @@ quality_profiles:
       - name: DVD
 
   - name: 2160p
-    min_format_score: 20000
+    min_format_score: 40000
     reset_unmatched_scores:
       enabled: true
     upgrade:
@@ -60,7 +60,7 @@ quality_profiles:
       - name: DVD
 
   - name: 2160p Only
-    min_format_score: 20000
+    min_format_score: 40000
     reset_unmatched_scores:
       enabled: true
     upgrade:

@@ -90,11 +90,22 @@ custom_formats:
     - 7a0d1ad358fee9f5b074af3ef3f9d9ef # hallowed
     assign_scores_to:
       - name: 1080p
-        score: 10000
+        score: 20000
       - name: 2160p
-        score: 10000
+        score: 20000
       - name: 2160p Only
-        score: 10000
+        score: 20000
+
+  - trash_ids:
+    # [No Category]
+    - 5153ec7413d9dae44e24275589b5e944 # BHDStudio
+    assign_scores_to:
+      - name: 1080p
+        score: 15000
+      - name: 2160p
+        score: 15000
+      - name: 2160p Only
+        score: 15000
   
   - trash_ids:
     # [No Category]

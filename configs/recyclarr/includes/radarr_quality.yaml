@@ -74,3 +74,35 @@ quality_profiles:
         qualities:
           - Bluray-2160p
           - WEBDL-2160p
+
+  - name: Unlimited
+    min_format_score: 40000
+    reset_unmatched_scores:
+      enabled: true
+    upgrade:
+      allowed: true
+      until_quality: Remux-2160p
+      until_score: 25000
+    score_set: default
+    quality_sort: top
+    qualities:
+      - name: Remux-2160p
+      - name: Bluray|WEB-2160p
+        qualities:
+          - Bluray-2160p
+          - WEBDL-2160p
+      - name: Remux-1080p
+      - name: Bluray|WEB-1080p
+        qualities:
+          - Bluray-1080p
+          - WEBDL-1080p
+      - name: Bluray|WEB-720p
+        qualities:
+          - WEBDL-720p
+          - Bluray-720p
+      - name: Bluray|WEB-480p
+        qualities:
+          - Bluray-576p
+          - Bluray-480p
+          - WEBDL-480p
+      - name: DVD

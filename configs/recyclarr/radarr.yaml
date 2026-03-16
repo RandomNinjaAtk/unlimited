@@ -72,6 +72,6 @@ radarr:
 
    # Include Configuration
     include:
-      - config: radarr_remux.yaml
       - config: radarr_custom_formats.yaml
       - config: radarr_quality.yaml
+      - config: radarr_remux.yaml

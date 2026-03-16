@@ -153,10 +153,21 @@ custom_formats:
         score: 10000
       - name: Unlimited
         score: 10000
-  
+
   - trash_ids:
     # [No Category]
     - 8df7fe4569063d39319f07e69707285a # WEBDL Boost
+    assign_scores_to:
+      - name: 1080p
+        score: 5000
+      - name: 2160p
+        score: 5000
+      - name: 2160p Only
+        score: 5000
+      - name: Unlimited
+        score: 5000
+  
+  - trash_ids:
     # Audio Channels
     - 77ff61788dfe1097194fd8743d7b4524 # 5.1 Surround
     - 6fd7b090c3f7317502ab3b63cc7f51e3 # 6.1 Surround

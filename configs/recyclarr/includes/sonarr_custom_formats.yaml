@@ -98,6 +98,7 @@ custom_formats:
       - name: 1080p
       - name: 2160p
       - name: 2160p Only
+      - name: Unlimited
 
   - trash_ids:
     # Miscellaneous
@@ -110,6 +111,8 @@ custom_formats:
         score: 20000
       - name: 2160p Only
         score: 20000
+      - name: Unlimited
+        score: 20000
 
   - trash_ids:
     # Miscellaneous
@@ -120,6 +123,8 @@ custom_formats:
       - name: 2160p
         score: -5000
       - name: 2160p Only
+        score: -5000
+      - name: Unlimited
         score: -5000
 
   - trash_ids:
@@ -140,6 +145,8 @@ custom_formats:
         score: 10
       - name: 2160p Only
         score: 10
+      - name: Unlimited
+        score: 10
 
   - trash_ids:
     # [No Category]
@@ -157,6 +164,8 @@ custom_formats:
       - name: 2160p
         score: 5
       - name: 2160p Only
+        score: 5
+      - name: Unlimited
         score: 5
 
   - trash_ids:
@@ -179,4 +188,6 @@ custom_formats:
       - name: 2160p
         score: -10
       - name: 2160p Only
+        score: -10
+      - name: Unlimited
         score: -10

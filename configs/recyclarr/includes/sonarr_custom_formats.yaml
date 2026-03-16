@@ -50,8 +50,6 @@ custom_formats:
     # HQ Source Groups
       - d6819cba26b1a6508138d25fb5e32293 # HD Bluray Tier 01
       - c2216b7b8aa545dc1ce8388c618f8d57 # HD Bluray Tier 02
-      - 9965a052eb87b0d10313b1cea89eb451 # Remux Tier 01
-      - 8a1d0c3d7497e741736761a1da866a2e # Remux Tier 02
       - d0c516558625b04b363fa6c5c2c7cfd4 # WEB Scene
       - e6258996055b9fbab7e9cb2f75819294 # WEB Tier 01
       - 58790d4e2fdcd9733aa7ae68ba2bb503 # WEB Tier 02
@@ -99,6 +97,20 @@ custom_formats:
       - name: 2160p
       - name: 2160p Only
       - name: Unlimited
+
+  - trash_ids:
+    # HQ Source Groups
+      - 9965a052eb87b0d10313b1cea89eb451 # Remux Tier 01
+    assign_scores_to:
+      - name: Unlimited
+        score: 250000
+  
+  - trash_ids:
+    # HQ Source Groups
+      - 8a1d0c3d7497e741736761a1da866a2e # Remux Tier 02
+    assign_scores_to:
+      - name: Unlimited
+        score: 225000
 
   - trash_ids:
     # Miscellaneous

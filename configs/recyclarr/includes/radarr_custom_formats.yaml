@@ -125,6 +125,8 @@ custom_formats:
         score: 20000
       - name: 2160p Only
         score: 20000
+      - name: Unlimited
+        score: 20000
 
   - trash_ids:
     # [No Category]
@@ -136,6 +138,8 @@ custom_formats:
         score: 20000
       - name: 2160p Only
         score: 20000
+      - name: Unlimited
+        score: 20000
 
   - trash_ids:
     # [No Category]
@@ -146,6 +150,8 @@ custom_formats:
       - name: 2160p
         score: 10000
       - name: 2160p Only
+        score: 10000
+      - name: Unlimited
         score: 10000
   
   - trash_ids:

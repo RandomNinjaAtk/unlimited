@@ -76,7 +76,7 @@ quality_profiles:
           - WEBDL-2160p
 
   - name: Unlimited
-    min_format_score: 40000
+    min_format_score: 20000
     reset_unmatched_scores:
       enabled: true
     upgrade:

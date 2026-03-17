@@ -83,10 +83,9 @@ quality_profiles:
     qualities:
       - name: WEBDL-2160p
       - name: Bluray-2160p
-      - name: WEBRip-2160p
       - name: WEBDL-1080p
-      - name: Bluray-1080p
       - name: Bluray-1080p Remux
+      - name: Bluray-1080p
       - name: WEBRip-1080p
       - name: WEBDL-720p
       - name: Bluray-720p

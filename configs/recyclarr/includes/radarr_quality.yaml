@@ -81,12 +81,11 @@ quality_profiles:
       enabled: true
     upgrade:
       allowed: true
-      until_quality: Remux-2160p
+      until_quality: Bluray|WEB-2160p
       until_score: 25000
     score_set: default
     quality_sort: top
     qualities:
-      - name: Remux-2160p
       - name: Bluray|WEB-2160p
         qualities:
           - Bluray-2160p
@@ -106,3 +105,4 @@ quality_profiles:
           - Bluray-480p
           - WEBDL-480p
       - name: DVD
+      - name: Remux-2160p

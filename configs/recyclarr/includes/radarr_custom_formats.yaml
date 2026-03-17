@@ -275,7 +275,7 @@ custom_formats:
     # HDR Optional
     - 923b6abef9b17f937fab56cfcf89e1f1 # DV (w/o HDR fallback)
     - 25c12f78430a3a23413652cbd1d48d77 # SDR (no WEBDL)
-    - 9c38ebb7384dada637be8899efa68e6f # SDR
+    # - 9c38ebb7384dada637be8899efa68e6f # SDR
     # Unwanted
     - ed38b889b31be83fda192888e2286d83 # BR-DISK
     - e6886871085226c3da1830830146846c # Generated Dynamic HDR
